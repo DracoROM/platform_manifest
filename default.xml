@@ -11,7 +11,7 @@
            remote="aosp"
            sync-j="4" />
 
-  <project path="build" name="SlimRoms/android_build" remote="github" revision="lp5.0" >
+  <project path="build" name="DracoROM/android_build" remote="github" revision="lp5.0" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
@@ -269,7 +269,7 @@
   <project path="external/zopfli" name="platform/external/zopfli" groups="pdk-cw-fs" />
   <project path="external/zxing" name="platform/external/zxing" groups="pdk-cw-fs" />
   <project path="frameworks/av" name="SlimRoms/frameworks_av" remote="github" revision="lp5.0" />
-  <project path="frameworks/base" name="SlimRoms/frameworks_base" remote="github" revision="lp5.0" />
+  <project path="frameworks/base" name="DracoROM/frameworks_base" remote="github" revision="lp5.0" />
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" groups="pdk" />
   <project path="frameworks/compile/mclinker" name="platform/frameworks/compile/mclinker" groups="pdk" />
   <project path="frameworks/compile/slang" name="platform/frameworks/compile/slang" groups="pdk" />
@@ -385,7 +385,7 @@
   <project path="packages/apps/Protips" name="platform/packages/apps/Protips" />
   <project path="packages/apps/Provision" name="platform/packages/apps/Provision" />
   <project path="packages/apps/QuickSearchBox" name="platform/packages/apps/QuickSearchBox" />
-  <project path="packages/apps/Settings" name="SlimRoms/packages_apps_Settings" remote="github" revision="lp5.0" />
+  <project path="packages/apps/Settings" name="DracoROM/packages_apps_Settings" remote="github" revision="lp5.0" />
   <project path="packages/apps/SmartCardService" name="platform/packages/apps/SmartCardService" />
   <project path="packages/apps/SoundRecorder" name="platform/packages/apps/SoundRecorder" />
   <project path="packages/apps/SpareParts" name="platform/packages/apps/SpareParts" />
@@ -497,10 +497,10 @@
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" />
   <project path="tools/tradefederation" name="platform/tools/tradefederation" groups="notdefault,tradefed" />
 
-<project path="platform_manifest" name="SlimRoms/platform_manifest" remote="github" revision="lp5.0" />
+<project path="platform_manifest" name="DracoROM/platform_manifest" remote="github" revision="lp5.0" />
 
   <!-- New Additions for slim -->
-  <project path="vendor/slim" name="SlimRoms/vendor_slim" remote="github" revision="lp5.0" />
+  <project path="vendor/slim" name="DracoROM/vendor_slim" remote="github" revision="lp5.0" />
 
   <!-- Slim OTA -->
   <project path="packages/apps/SlimCenter" name="SlimRoms/packages_apps_SlimCenter" remote="github" revision="lp5.0" />
@@ -536,5 +536,10 @@
   <!-- CyanogenMod ffmpeg -->
   <project path="external/ffmpeg" name="SlimRoms/android_external_ffmpeg" remote="github" revision="lp5.0" />
   <project path="external/stagefright-plugins" name="SlimRoms/android_external_stagefright-plugins" remote="github" revision="lp5.0" />
+
+  <!--Device Trees-->
+  <project path="device/lge/hammerhead" name="DracoROM/device_lge_hammerhead" remote="github" revision="lp5.0" />
+  <project path="kernel/lge/hammerhead" name="DracoROM/kernel_lge_hammerhead" remote="github" revision="lp5.0" />
+  <project path="vendor/lge" name="TheLoonyBin/proprietary_vendor_lge" remote="github" revision="lp5.0" />
 
 </manifest>
